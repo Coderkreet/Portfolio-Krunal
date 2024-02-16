@@ -1,0 +1,28 @@
+.card2 {
+    box-sizing: border-box;
+    width: 5rem;
+    height: 5rem;
+    background: rgba(217, 217, 217, 0.58);
+  
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+  }
+  
+  .card2:hover {
+    /* border: 1px solid black; */
+    transform: scale(1.20);
+  }
+  
+  .card2:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
