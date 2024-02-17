@@ -13,11 +13,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Coderkreet/Krunal-Portfolio.git"
+    "url": "git+https://github.com/Coderkreet/Portfolio-Krunal.git"
   },
   "author": "Krunal Bende",
   "bugs": {
-    "url": "https://github.com/Coderkreet/Krunal-Portfolio/issues"
+    "url": "https://github.com/Coderkreet/Portfolio-Krunal.git/issues"
   },
   "scripts": {
     "start": "react-scripts start",

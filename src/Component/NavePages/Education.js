@@ -9,7 +9,7 @@ import Rcc from '../assets/logo/RCC_logo.png';
 import Oriental from '../assets/logo/Oriental.png';
 import "../Education.css"
 import Javascript from "../assets/Certifcations/JavaScriptcer.jpg"
-import Taiwind from "../assets/Certifcations/TailwindCssc.jpg"
+import DataStructure from "../assets/Certifcations/DataStructure.jpg"
 import Webdesign from "../assets/Certifcations/WebDesign.png"
 import Reactjscer from "../assets/Certifcations/ReactJS.jpg"
 
@@ -110,6 +110,9 @@ const Education = () => {
 </div>
 <div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
 <img src={Javascript}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
+</div>
+<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<img src={DataStructure}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
 </div>
 
 
