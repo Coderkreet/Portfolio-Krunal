@@ -2,16 +2,18 @@ import React from 'react'
 import edu from '../assets/Education.svg'
 import NavBar from '../NavBar'
 import freecodecamp from "../assets/logo/ikqra03zdnggljdu5vv0.webp";
-import Hackerrank from "../assets/logo/download.png";
+import Hackerrank from "../assets/logo/Hackerrank.png";
 import leetcode from "../assets/logo/Leetcode.svg";
 import Udemy from "../assets/logo/udemy-3.svg";
 import Rcc from '../assets/logo/RCC_logo.png';
+import Google from '../assets/logo/Google.png';
 import Oriental from '../assets/logo/Oriental.png';
 import "../Education.css"
 import Javascript from "../assets/Certifcations/JavaScriptcer.jpg"
 import DataStructure from "../assets/Certifcations/DataStructure.jpg"
 import Webdesign from "../assets/Certifcations/WebDesign.png"
 import Reactjscer from "../assets/Certifcations/ReactJS.jpg"
+import AiGenerative from "../assets/Certifcations/Ai Generative.jpg"
 
 const Education = () => {
   return (
@@ -27,6 +29,7 @@ const Education = () => {
         <h1 className='md:text-[4rem] text-[#001c55] font-bold text-[2.5rem]'>Education</h1>
         <p className='md:text-[2rem] font-bold text-[#001c55] text-[1.2rem]'>Basic Qualification and Certifcations</p>
         <div className='flex gap-x-6'>
+         <a href="https://www.udemy.com/"><img src={Google} className='rounded-md hover:scale-110' width="40rem" alt=""/></a> 
          <a href="https://www.hackerrank.com/"><img src={Hackerrank} className='rounded-md hover:scale-110' width="50rem" alt=""/></a> 
          <a href="https://www.freecodecamp.org/"><img src={freecodecamp} className='rounded-md hover:scale-110' width="45rem" alt=""/></a> 
          <a href="https://leetcode.com/"><img src={leetcode} className='rounded-md hover:scale-110' width="50rem" alt=""/></a> 
@@ -102,6 +105,9 @@ const Education = () => {
 <div>
 <h1 data-Aos="fade-up" className='text-[2.4rem] m-[70px] flex justify-center text-[#001c55] font-bold'>Certifcations</h1>
 <div data-Aos="fade-up" className=' flex flex-col gap-6 justify-center items-center'>
+<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<img src={AiGenerative}  className=' w-full h-full object-fill' alt=""/>
+</div>
 <div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
 <img src={Webdesign}  className=' w-full h-full object-fill' alt=""/>
 </div>
