@@ -3,7 +3,7 @@ import React from 'react'
 import "./Animation.css"
 import "./SosialIcon.css"
 import img2 from './assets/avatar.5852f40fbb38aa284829fa3fb7722225.svg'
-import  img  from "./assets/home-main.541f8179af8209ce03ccf2178fe62dbf.svg";
+import  img  from "./assets/AnimationImg.gif";
 import {  BsGithub , BsInstagram , BsLinkedin} from "react-icons/bs";
 import { GrMail} from "react-icons/gr";
 import NavBar from './NavBar';
@@ -29,7 +29,7 @@ const HeroSection = () => {
         <NavBar/>
 
         <div className='md:flex md:flex-row md:max-w-[1080px] md:w-full md:mx-auto md:justify-center'>
-        <div data-Aos="fade-up" className= ' md:flex heroSection  md:w-10/12 md:max-w-[1080px] md:items-center  md:justify-between bg-[#edf9fe] gap-x-8 mt-10 justify-center items-center '>
+        <div data-Aos="fade-up" className= ' md:flex heroSection  md:w-10/12 md:max-w-[1080px] md:items-center  md:justify-between bg-[#edf9fe] gap-x-10 mt-10 justify-center items-center '>
     <div className='md:w-[40rem] md:items-center md:justify-center md:gap-y-10 md:flex md:flex-col md:h-[35rem] flex flex-col gap-5 text-center '>
         <h1 className='md:text-[4rem] text-[#001c55] font-bold text-4xl'>Krunal Bende</h1>
         <h2 className='md:text-[2rem] md:font-bold text-[#001c55] font-bold text-2xl'>Software Engineer</h2>
@@ -58,6 +58,8 @@ const HeroSection = () => {
     </div>
 <div>
     <img className=' md:w-[680px]' src={img} alt=""/>
+    {/* <a href="https://storyset.com/web">Web illustrations by Storyset</a> */}
+    
 </div>
 </div>
         </div>
