@@ -29,7 +29,7 @@ const Education = () => {
         <h1 className='md:text-[4rem] text-[#001c55] font-bold text-[2.5rem]'>Education</h1>
         <p className='md:text-[2rem] font-bold text-[#001c55] text-[1.2rem]'>Basic Qualification and Certifcations</p>
         <div className='flex gap-x-6'>
-         <a href="https://www.udemy.com/"><img src={Google} className='rounded-md hover:scale-110' width="40rem" alt=""/></a> 
+         <a href="https://coursera.org/share/a02f565778f3327ff9ec9bc28f4e6817"><img src={Google} className='rounded-md hover:scale-110' width="40rem" alt=""/></a> 
          <a href="https://www.hackerrank.com/"><img src={Hackerrank} className='rounded-md hover:scale-110' width="50rem" alt=""/></a> 
          <a href="https://www.freecodecamp.org/"><img src={freecodecamp} className='rounded-md hover:scale-110' width="45rem" alt=""/></a> 
          <a href="https://leetcode.com/"><img src={leetcode} className='rounded-md hover:scale-110' width="50rem" alt=""/></a> 
