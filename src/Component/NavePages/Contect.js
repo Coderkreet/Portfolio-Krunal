@@ -44,7 +44,7 @@ const Contect = () => {
   </a>
       </div> 
       {/* resume btn */}
-      <a target='_blank' href="https://drive.google.com/file/d/1AEiLoRvMXAqGX1JKA5QmYje7Q9X04LuH/view?pli=1">  <button className="m-10 cta">
+      <a target='_blank' href="https://drive.google.com/file/d/1ZHHuA49R3VBjXpWTIapDEqpdxaS1DJ_K/view?usp=drive_link">  <button className="m-10 cta">
   <span>  See My Resume</span>
   <svg viewBox="0 0 13 10" height="10px" width="15px">
     <path d="M1,5 L11,5"></path>
