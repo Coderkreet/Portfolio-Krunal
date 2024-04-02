@@ -30,8 +30,8 @@ const HeroSection = () => {
 
         <div className='md:flex md:flex-row md:max-w-[1080px] md:w-full md:mx-auto md:justify-center'>
         <div data-Aos="fade-up" className= ' md:flex heroSection  md:w-10/12 md:max-w-[1080px] md:items-center  md:justify-between bg-[#edf9fe] gap-x-10 mt-10 justify-center items-center '>
-    <div className='md:w-[40rem] md:items-center md:justify-center md:gap-y-10 md:flex md:flex-col md:h-[35rem] flex flex-col gap-5 text-center '>
-        <h1 className='md:text-[4rem] text-[#001c55] font-bold text-4xl'>Krunal Bende</h1>
+    <div className='md:w-[50rem] md:items-center md:justify-center md:gap-y-10 md:flex md:flex-col md:h-[35rem] flex flex-col gap-5 text-center '>
+        <h1 className='md:text-[4rem] text-[#001c55] font-bold text-3xl'>Krunal Bende</h1>
         <h2 className='md:text-[2rem] md:font-bold text-[#001c55] font-bold text-2xl'>Software Engineer</h2>
         <p className='md:text-[1.3rem] md:font-bold  text-[#7f8daa] font-bold text-1xl'>A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
 
