@@ -14,6 +14,7 @@ import DataStructure from "../assets/Certifcations/DataStructure.jpg"
 import Webdesign from "../assets/Certifcations/WebDesign.png"
 import Reactjscer from "../assets/Certifcations/ReactJS.jpg"
 import AiGenerative from "../assets/Certifcations/Ai Generative.jpg"
+import Hacker from "../assets/Certifcations/Hacker.png"
 
 const Education = () => {
   return (
@@ -104,20 +105,23 @@ const Education = () => {
 
 <div>
 <h1 data-Aos="fade-up" className='text-[2.4rem] m-[70px] flex justify-center text-[#001c55] font-bold'>Certifcations</h1>
-<div data-Aos="fade-up" className=' flex flex-col gap-6 justify-center items-center'>
-<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<div data-Aos="fade-up" className=' flex gap-6 justify-center flex-wrap items-center'>
+<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
 <img src={AiGenerative}  className=' w-full h-full object-fill' alt=""/>
 </div>
-<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
+<img src={Hacker}  className=' w-full h-full object-fill' alt=""/>
+</div>
+<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
 <img src={Webdesign}  className=' w-full h-full object-fill' alt=""/>
 </div>
-<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
 <img src={Reactjscer}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
 </div>
-<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
 <img src={Javascript}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
 </div>
-<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[40rem] md:w-[60rem] '>
+<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
 <img src={DataStructure}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
 </div>
 
