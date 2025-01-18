@@ -22,11 +22,6 @@ const NavBar = () => {
 
   function handleclickanimation() {
 
-    // document.getElementById('Education').style.cssText = "color : black ;  font-weight: bold"
-    // document.getElementById('Skills').style.cssText = "color : black ;  font-weight: bold"
-    // document.getElementById('about').style.cssText = "color : white font-weight: bold;"
-    // document.getElementById('contact').style.cssText = "color : red font-weight: bold;"
-    
       }
   return (
     <div data-Aos = "fade-down" className='NavBar lg:w-10/12  lg:max-w-[1080px]  lg:mx-auto flex bg-[#edf9fe] lg:justify-center lg:items-center'>
