@@ -22,7 +22,7 @@ const Contect = () => {
 
       <div className='flex flex-col md:w-[35rem] gap-y-10 mt-8 items-center'>
         <h1 className='md:text-[4rem] text-[2.5rem] text-[#001c55] font-bold'>Contect</h1>
-      <p className='font-bold text-[1.3rem] text-center text-[#7f8daa]'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.</p>
+      <p className='font-bold text-[1.3rem] text-center text-[#7f8daa]'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with  JavaScript,React,React-Native,NodeJS,ExpressJs Development.</p>
 
 
       <div class="card3 gap-4">

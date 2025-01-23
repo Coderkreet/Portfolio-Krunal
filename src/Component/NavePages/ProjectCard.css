@@ -1,8 +1,6 @@
-
-  
 .cardBox {
-  width: 500px;
-  height: 300px;
+  width: 96%;
+  height: 80vh;
   position: relative;
   display: grid;
   place-items: center;
@@ -11,8 +9,6 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
     rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
 }
-
-
 .card {
   position: absolute;
   width: 100%;
@@ -59,7 +55,7 @@
 
 .card .content h3 {
   font-size: 3rem;
-  padding-bottom: 10px;
+  padding-bottom: 10px
 }
 
 .card .content p {

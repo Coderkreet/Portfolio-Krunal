@@ -7,11 +7,144 @@
   <title>Krunal's PortFolio</title>
   <link rel="icon" type="image/x-icon" href="/public/favicon-16x16.png">
 
+<style>
+  @keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background:transparent;
+    z-index: -20;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(69, 116, 146, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+
+
+
+.background li:nth-child(0) {
+    left: 42%;
+    width: 6px;
+    height: 6px;
+    bottom: -6px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 37%;
+    width: 79px;
+    height: 79px;
+    bottom: -79px;
+    animation-delay: 2s;
+}
+.background li:nth-child(2) {
+    left: 89%;
+    width: 28px;
+    height: 28px;
+    bottom: -28px;
+    animation-delay: 7s;
+}
+.background li:nth-child(3) {
+    left: 37%;
+    width: 16px;
+    height: 16px;
+    bottom: -16px;
+    animation-delay: 1s;
+}
+.background li:nth-child(4) {
+    left: 55%;
+    width: 56px;
+    height: 56px;
+    bottom: -56px;
+    animation-delay: 9s;
+}
+.background li:nth-child(5) {
+    left: 63%;
+    width: 114px;
+    height: 114px;
+    bottom: -114px;
+    animation-delay: 22s;
+}
+.background li:nth-child(6) {
+    left: 85%;
+    width: 20px;
+    height: 20px;
+    bottom: -20px;
+    animation-delay: 14s;
+}
+.background li:nth-child(7) {
+    left: 57%;
+    width: 77px;
+    height: 77px;
+    bottom: -77px;
+    animation-delay: 24s;
+}
+.background li:nth-child(8) {
+    left: 39%;
+    width: 65px;
+    height: 65px;
+    bottom: -65px;
+    animation-delay: 18s;
+}
+.background li:nth-child(9) {
+    left: 1%;
+    width: 91px;
+    height: 91px;
+    bottom: -91px;
+    animation-delay: 36s;
+}
+.background li:nth-child(10) {
+    left: 25%;
+    width: 5px;
+    height: 5px;
+    bottom: -5px;
+    animation-delay: 41s;
+}
+</style>
+
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+
+  <ul class="background">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+ </ul>
+
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

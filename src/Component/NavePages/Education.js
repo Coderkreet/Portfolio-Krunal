@@ -15,6 +15,7 @@ import Webdesign from "../assets/Certifcations/WebDesign.png"
 import Reactjscer from "../assets/Certifcations/ReactJS.jpg"
 import AiGenerative from "../assets/Certifcations/Ai Generative.jpg"
 import Hacker from "../assets/Certifcations/Hacker.png"
+import { Typewriter } from 'react-simple-typewriter';
 
 const Education = () => {
   return (
@@ -24,10 +25,20 @@ const Education = () => {
       <div className='md:flex max-w-[1080px] w-full mx-auto justify-center'>
         
     
-    <div data-Aos="fade-up" className= 'flex md:flex-row md:heroSection md:w-10/12 md:max-w-[1080px] md:items-center md:justify-between bg-[#edf9fe]   flex-col gap-y-6 justify-center items-center'>
+    <div data-Aos="fade-up" className= 'flex md:flex-row md:heroSection md:w-10/12 md:max-w-[1080px] md:items-center md:justify-between    flex-col gap-y-6 justify-center items-center'>
       <img className='md:w-[30rem] w-[20rem]'  src={edu} alt=""/>
       <div className='md:w-[40rem] md:justify-center md:gap-y-10 flex flex-col justify-center  text-center items-center gap-6'>
-        <h1 className='md:text-[4rem] text-[#001c55] font-bold text-[2.5rem]'>Education</h1>
+      <h1 className="md:text-[4rem] text-[#001c55] font-bold text-[2.5rem]">
+              <Typewriter
+                words={['Education']}
+                loop={false} // Set to true for an infinite loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
+            </h1>
         <p className='md:text-[2rem] font-bold text-[#001c55] text-[1.2rem]'>Basic Qualification and Certifcations</p>
         <div className='flex gap-x-6'>
          <a href="https://coursera.org/share/a02f565778f3327ff9ec9bc28f4e6817"><img src={Google} className='rounded-md hover:scale-110' width="40rem" alt=""/></a> 

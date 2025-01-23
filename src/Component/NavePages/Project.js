@@ -4,7 +4,43 @@ import NavBar from '../NavBar';
 import "./ProjectCard.css"
 import WeatherProject from '../assets/Projectimage/Weather.png'
 import DevDetective from '../assets/Projectimage/DevDetective.png'
+import eCom from '../assets/Projectimage/E-commerce.png'
+import BrandBeet from '../assets/Projectimage/BrandBeet.png'
 const Project = () => {
+
+  const MyProject =[
+    {
+      Name : "Cartnevula",
+      Image : eCom,
+      dec : "GitHub User Detective clearly states the purpose of the app, which is to investigate GitHub users or their activities.",
+      GitLink : 'https://github.com/Coderkreet/E-Commerce-App',
+      LiveLink : 'https://peppy-concha-44d25d.netlify.app/'
+    },
+    {
+      Name : "BrandBeet",
+      Image : BrandBeet,
+      dec : "GitHub User Detective clearly states the purpose of the app, which is to investigate GitHub users or their activities.",
+      GitLink : 'https://github.com/Coderkreet/BrandBeet',
+      LiveLink : 'https://coderkreet.github.io/BrandBeet/'
+    },
+{
+  Name : "Weather",
+  Image : WeatherProject,
+  dec : "Your Personal Forecast indicates that the app offers personalized weather updates tailored to the users location or preferences.",
+  GitLink : 'https://coderkreet.github.io/WeatherApp/',
+  LiveLink : 'https://coderkreet.github.io/WeatherApp/'
+},
+{
+  Name : "DevDetective",
+  Image : DevDetective,
+  dec : "GitHub User Detective clearly states the purpose of the app, which is to investigate GitHub users or their activities.",
+  GitLink : 'https://coderkreet.github.io/Githhub-User-Detective/',
+  LiveLink : 'https://github.com/Coderkreet/Githhub-User-Detective'
+},
+
+
+
+  ]
   return (
     <div>
       <NavBar/>
@@ -28,67 +64,32 @@ const Project = () => {
 
   <div className='flex gap-10 flex-wrap justify-center mt-10'>
     
-
-  <div class="cardBox">
-  <img className='w-full h-full object-fill' src={WeatherProject} alt=""/>
-  <div class="card">
-    <span2 class="text"> Weather</span2>
-    <div class="content flex flex-col gap-10 justify-end">
-      <p>"Your Personal Forecast" indicates that the app offers personalized weather updates tailored to the user's location or preferences.
-      </p>
-      <div className='flex gap-9 justify-center'>
-   <a href="https://coderkreet.github.io/WeatherApp/">
-          <button class="button">
-  Live Demo
-</button>
-   </a>
-
-<a href="https://github.com/Coderkreet/WeatherApp">
-
-  <button class="button" >
-  Gith Hub
-</button>
-</a>
-
-
-      </div>
-
-
+{
+  MyProject.map((item)=>(
+    <div class="cardBox">
+    <img className='w-full h-full object-cover' src={item.Image} alt=""/>
+    <div class="card">
+      <span2 class="text"> {item.Name}</span2>
+      <div class="content flex flex-col gap-10 justify-end">
+        <p> {item.dec} </p>
+        <div className='flex gap-9 justify-center'>
+     <a href={item.LiveLink}>
+            <button class="button">
+    Live Demo
+  </button>
+     </a>
+  
+  <a href={item.GitLink}>
+    <button class="button" >
+    Gith Hub
+  </button>
+  </a>
+   </div>
+   </div>
     </div>
   </div>
-</div>
-
-{/* 2 */}
-
-  <div class="cardBox">
-  <img className='w-full h-full object-fill' src={DevDetective} alt=""/>
-  <div class="card">
-    <span2 class="text"> DevDetective</span2>
-    <div class="content flex flex-col gap-10 justify-end">
-      <p className='tracking-wide '>"GitHub User Detective" clearly states the purpose of the app, which is to investigate GitHub users or their activities. </p>
-      <div className='flex gap-9 justify-center'>
-   <a href="https://coderkreet.github.io/Githhub-User-Detective/">
-          <button class="button">
-  Live Demo
-</button>
-   </a>
-
-<a href="https://github.com/Coderkreet/Githhub-User-Detective">
-
-  <button class="button" >
-  Gith Hub
-</button>
-</a>
-
-
-      </div>
-
-
-    </div>
-  </div>
-</div>
-
-
+  ))
+}
 
   </div>
 </div>

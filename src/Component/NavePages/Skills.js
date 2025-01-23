@@ -27,7 +27,7 @@ const Skills = () => {
      <NavBar/>
      {/* Knowledge */}
      <div className='md:flex md:max-w-[1080px] md:mb-0 md:w-full md:mx-auto md:justify-center '>
-        <div className= ' md:flex flex-col heroSection  md:w-10/12 md:max-w-[1080px] md:items-center  md:justify-between bg-[#edf9fe]'>
+        <div className= ' md:flex flex-col heroSection  md:w-10/12 md:max-w-[1080px] md:items-center  md:justify-between'>
 
         <div data-aos="zoom-in" className='mt-[-10px]'>
           <img width={"400px"} src={Knowledge} alt=""/>
