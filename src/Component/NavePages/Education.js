@@ -31,7 +31,7 @@ const Education = () => {
       <h1 className="md:text-[4rem] text-[#001c55] font-bold text-[2.5rem]">
               <Typewriter
                 words={['Education']}
-                loop={false} // Set to true for an infinite loop
+                loop= "1" // Set to true for an infinite loop
                 cursor
                 cursorStyle="_"
                 typeSpeed={70}

@@ -17,6 +17,7 @@ import Git from '../assets/IconSkill/Git.png'
 import GithHub from '../assets/IconSkill/GithHub.png'
 import Docker from '../assets/IconSkill/Docker.png'
 import sass from '../assets/IconSkill/sass.png'
+import { Typewriter } from 'react-simple-typewriter';
 
 
 
@@ -29,9 +30,23 @@ const Skills = () => {
      <div className='md:flex md:max-w-[1080px] md:mb-0 md:w-full md:mx-auto md:justify-center '>
         <div className= ' md:flex flex-col heroSection  md:w-10/12 md:max-w-[1080px] md:items-center  md:justify-between'>
 
-        <div data-aos="zoom-in" className='mt-[-10px]'>
           <img width={"400px"} src={Knowledge} alt=""/>
-        <h1 data-Aos="fade-up" className='md:text-[2.4rem] text-[1.5rem] flex justify-center text-[#001c55] font-bold '>What Knowledge I Have ?</h1>
+        <div data-aos="zoom-in" className='mt-[-10px]'>
+       
+         
+        <h1 data-Aos="fade-up" className='md:text-[2.4rem]  text-[1.5rem] flex justify-center text-[#001c55] font-bold '> 
+        <Typewriter
+                       words={['What Knowledge I Have ?']}
+                       loop= "1" // Set to true for an infinite loop
+                       cursor
+                       cursorStyle="_"
+                       typeSpeed={70}
+                       deleteSpeed={50}
+                       delaySpeed={2000}
+                     /> 
+          
+          </h1>
+
     </div>
     <div className='md:w-[60rem] md:mt-20 mt-6 md:justify-center gap-y-6 text-center flex flex-col md:h-[35rem]  '>
     <p data-aos = "fade-right" className='text-[#001c55] text-[20px] '> <span className='font-semibold '>⚡Problem Solving:</span> Adept at analyzing complex problems and devising innovative solutions. Enjoy tackling challenges through logical thinking and creative coding techniques.</p>

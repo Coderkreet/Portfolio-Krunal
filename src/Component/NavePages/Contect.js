@@ -10,6 +10,7 @@ import Insta from '../assets/social-media-Icon/Insta.png'
 import Linkdin from '../assets/social-media-Icon/Linkdin.png'
 import Whatsaap from '../assets/social-media-Icon/Whatsaap.png'
 import Mail from '../assets/social-media-Icon/Mail.png'
+import { Typewriter } from 'react-simple-typewriter';
 const Contect = () => {
   return (
     <div>
@@ -21,7 +22,17 @@ const Contect = () => {
         </div>
 
       <div className='flex flex-col md:w-[35rem] gap-y-10 mt-8 items-center'>
-        <h1 className='md:text-[4rem] text-[2.5rem] text-[#001c55] font-bold'>Contect</h1>
+        <h1 className='md:text-[4rem] text-[2.5rem] text-[#001c55] font-bold'>
+            <Typewriter
+                                           words={['Contact']}
+                                           loop= "1" // Set to true for an infinite loop
+                                           cursor
+                                           cursorStyle="_"
+                                           typeSpeed={70}
+                                           deleteSpeed={50}
+                                           delaySpeed={2000}
+                                         /> 
+          </h1>
       <p className='font-bold text-[1.3rem] text-center text-[#7f8daa]'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with  JavaScript,React,React-Native,NodeJS,ExpressJs Development.</p>
 
 

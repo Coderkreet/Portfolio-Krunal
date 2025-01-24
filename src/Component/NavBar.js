@@ -12,8 +12,6 @@ const NavBar = () => {
   const [open , setOpen] = useState(true)
 
   const location = useLocation();
-  console.log(location.pathname);
-
   function heandlemanu() {
     setOpen(!open);
   }
@@ -37,11 +35,11 @@ const NavBar = () => {
      
           
       <ul onClick={handleclickanimation}  className={`lg:flex text-[1.2rem] cursor-pointer items-center  gap-x-6 ${open ? "hidden":"block translate-x-20 transition-all duration-200"}`}>
-        <Link to={"/"} >  <li className={` p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/'&&"font-bold"}`} >Home </li> </Link>
-        <Link to={"/Education"} id='Education' >  <li className={` p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/Education'&&"font-bold"}`} >Education </li> </Link>
+    <Link to={"/"} >  <li className={` p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/'&&"font-bold"}`} >Home </li> </Link>
+    <Link to={"/Education"} id='Education' >  <li className={` p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/Education'&&"font-bold"}`} >Education </li> </Link>
     <Link to={"/Skills"} id='Skills'> <li className={`p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/Skills'&&"font-bold"}`} >Skills</li> </Link>
     <Link to={'/Project'}> <li className={` p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/Project'&&"font-bold"}`} >Project</li> </Link>
-    <Link to={"/Contect"}>  <li className={`p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/Contect'&&"font-bold"}`} >Contect Me</li> </Link>
+    <Link to={"/Contact"}>  <li className={`p-3 hover:bg-[rgb(166,225,250)] translate-100 hover:font-bold ${location.pathname==='/Contact'&&"font-bold"}`} >Contact Me</li> </Link>
     </ul>
    
   </nav>

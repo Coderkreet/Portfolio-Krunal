@@ -4,7 +4,7 @@ import {Routes ,Route} from 'react-router-dom'
 import Education from "./Component/NavePages/Education";
 import Skills from "./Component/NavePages/Skills";
 import Project from './Component/NavePages/Project'
-import Contect from './Component/NavePages/Contect'
+import Contact from './Component/NavePages/Contect'
 import Footer from "./Component/Footer";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -47,7 +47,7 @@ const [isOpen,setIsOpen] = useState(true)
 <Route path='/Education' element={<Education/>}/>
 <Route path='/Skills' element={<Skills/>}/>
 <Route path='/Project' element={<Project/>}/>
-<Route path='/Contect' element={<Contect/>}/>
+<Route path='/Contact' element={<Contact/>}/>
 </Routes>
    </div>
   
