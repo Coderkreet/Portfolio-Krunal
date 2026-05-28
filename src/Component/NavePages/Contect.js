@@ -22,7 +22,7 @@ const Contect = () => {
         </div>
 
       <div className='flex flex-col md:w-[35rem] gap-y-10 mt-8 items-center'>
-        <h1 className='md:text-[4rem] text-[2.5rem] text-[#001c55] font-bold'>
+        <h1 className='md:text-[4rem] text-[2.5rem] text-themePrimary font-bold transition-colors duration-300'>
             <Typewriter
                                            words={['Contact']}
                                            loop= "1" // Set to true for an infinite loop
@@ -33,7 +33,7 @@ const Contect = () => {
                                            delaySpeed={2000}
                                          /> 
           </h1>
-      <p className='font-bold text-[1.3rem] text-center text-[#7f8daa]'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with  JavaScript,React,React-Native,NodeJS,ExpressJs Development.</p>
+      <p className='font-bold text-[1.3rem] text-center text-themeTextMuted transition-colors duration-300'>I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with  JavaScript,React,React-Native,NodeJS,ExpressJs Development.</p>
 
 
       <div class="card3 gap-4">
@@ -71,11 +71,11 @@ const Contect = () => {
       <div data-Aos="fade-left" className='md:flex mt-10 max-w-[1080px] gap-x-20 w-full mx-auto justify-center'>
      <img src={Contectimg} alt="" width={500} />
       <div className='flex flex-col gap-10 text-center'>
-        <h1 className='text-4xl text-[#001c55] font-extrabold'>Address</h1>
-        <p className='font-bold text-[1.1rem] text-[#7f8daa]'>GT Road, T.A.- Sausar, Dist.- Chhindwara, Madhya Pradesh (M.P.) - 480106</p>
+        <h1 className='text-4xl text-themePrimary font-extrabold transition-colors duration-300'>Address</h1>
+        <p className='font-bold text-[1.1rem] text-themeTextMuted transition-colors duration-300'>GT Road, T.A.- Sausar, Dist.- Chhindwara, Madhya Pradesh (M.P.) - 480106</p>
         <div className='flex justify-center items-center gap-x-4'>
-        <BsFillTelephoneInboundFill className='text-[#001c55]'/> 
-        <a href="tel:9300631627"> <p className='text-[#001c55] text-[1.2rem] '> <span className=' font-bold'>  Phone No. :</span> <button class="btn ml-[1.4rem]"> Click Here
+        <BsFillTelephoneInboundFill className='text-themePrimary transition-colors duration-300'/> 
+        <a href="tel:9300631627"> <p className='text-themePrimary text-[1.2rem] transition-colors duration-300'> <span className=' font-bold'>  Phone No. :</span> <button class="btn ml-[1.4rem]"> Click Here
 </button></p> </a>
     
         </div>

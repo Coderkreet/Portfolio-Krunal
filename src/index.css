@@ -4,12 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
-/* name */
-body{
-background-color: #edf9fe;
-font-family: 'Open Sans', sans-serif;  
-
+:root {
+  --color-background: #edf9fe;
+  --color-text: #001c55;
+  --color-text-muted: #7f8daa;
+  --color-primary: #001c55;
+  --color-accent: #b1dae7;
+  --color-card-bg: #ffffff;
+  --color-card-header: #8ecaf2;
+  --color-nav-hover: rgb(166, 225, 250);
+  --color-footer-bg: #ffffff;
 }
+
+/* name */
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Open Sans', sans-serif;  
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
 
 #Fname{
     list-style-type: none;

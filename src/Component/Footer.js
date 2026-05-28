@@ -8,29 +8,29 @@ import "./SosialIcon.css"
 const Footer = () => {
   return (
     <div>
-      <div className='flex flex-col mt-10 justify-center items-center bg-[#233a6a] text-center'>
+      <div className='flex flex-col mt-10 justify-center items-center bg-themeFooterBg text-center p-6 transition-colors duration-300'>
 
       <div class="card3">
 
 <a target='_blank' href='https://github.com/Coderkreet' class="social-link1 ">
-<BsGithub className='text-[#7f8daa] hover:text-white'/>
+<BsGithub className='text-themeTextMuted hover:text-themePrimary transition-colors duration-300'/>
 
 </a>
 <a target='_blank' href='https://www.instagram.com/_kreet.16_x/' class="social-link2">
-<BsInstagram className='text-[#7f8daa] hover:text-white'/>
+<BsInstagram className='text-themeTextMuted hover:text-themePrimary transition-colors duration-300'/>
 
    </a>
 <a target='_blank' href='https://www.linkedin.com/in/krunal-bende' class="social-link3">
-<BsLinkedin className='text-[#7f8daa] hover:text-white'/>
+<BsLinkedin className='text-themeTextMuted hover:text-themePrimary transition-colors duration-300'/>
 
 </a>
 <a target='_blank' href='mailto:krunalbende2@mail.com' class="social-link4">
-<GrMail className='text-[#7f8daa] hover:text-white'/>
+<GrMail className='text-themeTextMuted hover:text-themePrimary transition-colors duration-300'/>
 
 </a>
 </div> 
 
-        <h1 className='text-[1.1rem] font-bold  text-[#7f8daa] hover:text-white'>Copyright @2023 | Designed With by Krunal/Kreet❤️</h1>
+        <h1 className='text-[1.1rem] font-bold text-themeTextMuted hover:text-themePrimary transition-colors duration-300'>Copyright @2023 | Designed With by Krunal/Kreet❤️</h1>
 
       </div>
     </div>
