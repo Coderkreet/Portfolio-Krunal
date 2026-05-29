@@ -17,7 +17,10 @@
   cursor: pointer;
 }
 
-.card3 .social-link1,.card3 .social-link2,.card3 .social-link3,.card3 .social-link4 {
+.card3 .social-link1,
+.card3 .social-link2,
+.card3 .social-link3,
+.card3 .social-link4 {
   position: relative;
   display: flex;
   align-items: center;
@@ -88,6 +91,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .form_main::before {
   position: absolute;
   content: "";
@@ -191,21 +195,276 @@
   border: 2px dashed #5d77a9;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   transition: .4s;
- }
- 
- .btn span:last-child {
+}
+
+.btn span:last-child {
   display: none;
- }
- 
- .btn:hover {
+}
+
+.btn:hover {
   transition: .4s;
   border: 2px dashed #001c55;
   background-color: #fff;
   color: #001c55;
- }
- 
- .btn:active {
+}
+
+.btn:active {
   background-color: #233a6a;
- }
- 
- 
+}
+
+/* --- 3D LAYERED HOVER SOCIAL BUTTONS --- */
+.doodle-container {
+  list-style: none;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: max-content;
+}
+
+.tooltip-container {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  border-radius: 15px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  z-index: 100;
+}
+
+.profile {
+  background: #2a2b2f;
+  border-radius: 10px 15px;
+  padding: 10px;
+  border: 1px solid #38bdf8;
+  min-width: 170px;
+}
+
+.tooltip-container:hover .tooltip {
+  top: -105px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.icon {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+
+.layer {
+  width: 55px;
+  height: 55px;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.icon:hover .layer {
+  transform: rotate(-35deg) skew(20deg);
+}
+
+.layer span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dynamic colors for each stack */
+.link-github .layer span {
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+.link-github:hover .layer span {
+  box-shadow: -1px 1px 3px #38bdf8;
+}
+
+.link-instagram .layer span {
+  color: #e6683c;
+  border-color: #e6683c;
+}
+.link-instagram:hover .layer span {
+  box-shadow: -1px 1px 3px #e6683c;
+}
+
+.link-linkedin .layer span {
+  color: #0077b5;
+  border-color: #0077b5;
+}
+.link-linkedin:hover .layer span {
+  box-shadow: -1px 1px 3px #0077b5;
+}
+
+.link-mail .layer span {
+  color: #ea4335;
+  border-color: #ea4335;
+}
+.link-mail:hover .layer span {
+  box-shadow: -1px 1px 3px #ea4335;
+}
+
+.icon .text {
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  opacity: 0;
+  font-weight: 600;
+  font-size: 13px;
+  transform: translateX(-50%);
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+/* Light / Dark Mode Text Color Compatibility */
+.link-github .text { color: #38bdf8; }
+.link-instagram .text { color: #e6683c; }
+.link-linkedin .text { color: #0077b5; }
+.link-mail .text { color: #ea4335; }
+
+.icon:hover .text {
+  bottom: -30px;
+  opacity: 1;
+}
+
+.icon:hover .layer span:nth-child(1) {
+  opacity: 0.2;
+}
+.icon:hover .layer span:nth-child(2) {
+  opacity: 0.4;
+  transform: translate(5px, -5px);
+}
+.icon:hover .layer span:nth-child(3) {
+  opacity: 0.6;
+  transform: translate(10px, -10px);
+}
+.icon:hover .layer span:nth-child(4) {
+  opacity: 0.8;
+  transform: translate(15px, -15px);
+}
+.icon:hover .layer span:nth-child(5) {
+  opacity: 1;
+  transform: translate(20px, -20px);
+}
+
+.instagramSVG {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.githubSVG {
+  background: #1e1e24;
+}
+
+.linkedinSVG {
+  background: #0077b5;
+}
+
+.mailSVG {
+  background: #ea4335;
+}
+
+.layer span svg {
+  transition: transform 0.3s;
+}
+.icon:hover .layer span svg {
+  transform: scale(1.1);
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #2a2b2f;
+}
+
+.name {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.link-github .name { color: #38bdf8; }
+.link-instagram .name { color: #e6683c; }
+.link-linkedin .name { color: #0077b5; }
+.link-mail .name { color: #ea4335; }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  color: #fff;
+}
+
+.username {
+  font-size: 12px;
+  color: #ccc;
+  text-align: left;
+}
+
+.about {
+  color: #bbb;
+  font-size: 12px;
+  text-align: left;
+  padding-top: 5px;
+}
+
+/* --- THE FLOATING FOLDER ANIMATIONS --- */
+@keyframes custom-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.floating-folder {
+  animation: custom-bounce 3.5s ease-in-out infinite;
+}
+
+.floating-folder-slow {
+  animation: custom-bounce 3.5s ease-in-out infinite;
+  animation-delay: 1.75s;
+}

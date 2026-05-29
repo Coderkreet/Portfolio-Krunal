@@ -28,7 +28,7 @@ const Education = () => {
     <div data-Aos="fade-up" className= 'flex md:flex-row md:heroSection md:w-10/12 md:max-w-[1080px] md:items-center md:justify-between    flex-col gap-y-6 justify-center items-center'>
       <img className='md:w-[30rem] w-[20rem]'  src={edu} alt=""/>
       <div className='md:w-[40rem] md:justify-center md:gap-y-10 flex flex-col justify-center  text-center items-center gap-6'>
-      <h1 className="md:text-[4rem] text-[#001c55] font-bold text-[2.5rem]">
+      <h1 className="md:text-[4rem] text-themePrimary font-bold text-[2.5rem] transition-colors duration-300">
               <Typewriter
                 words={['Education']}
                 loop= "1" // Set to true for an infinite loop
@@ -39,7 +39,7 @@ const Education = () => {
                 delaySpeed={2000}
               />
             </h1>
-        <p className='md:text-[2rem] font-bold text-[#001c55] text-[1.2rem]'>Basic Qualification and Certifcations</p>
+        <p className='md:text-[2rem] font-bold text-themePrimary text-[1.2rem] transition-colors duration-300'>Basic Qualification and Certifcations</p>
         <div className='flex gap-x-6'>
          <a href="https://coursera.org/share/a02f565778f3327ff9ec9bc28f4e6817"><img src={Google} className='rounded-md hover:scale-110' width="40rem" alt=""/></a> 
          <a href="https://www.hackerrank.com/"><img src={Hackerrank} className='rounded-md hover:scale-110' width="50rem" alt=""/></a> 
@@ -53,30 +53,30 @@ const Education = () => {
     </div>
       {/* Education Qualification*/}
       <div>
-    <h1 data-Aos="fade-up" className='md:text-[2.4rem] md:m-[70px] flex justify-center text-[#001c55] font-extrabold mt-20 text-[1.5rem]'>Education Qualifications</h1>
+    <h1 data-Aos="fade-up" className='md:text-[2.4rem] md:m-[70px] flex justify-center text-themePrimary font-extrabold mt-20 text-[1.5rem] transition-colors duration-300'>Education Qualifications</h1>
 
 {/* MCA */}
       <div className= ' md:flex md:flex-row md:gap-x-5 md:mb-4 md:max-w-[1080px] md:w-full md:mx-auto md:justify-center flex flex-col justify-center items-center'>
         <div data-Aos ="flip-left" className='md:my-auto drop-shado md:w-[400px] w-[15rem]'>
         <img src={Oriental} alt=""/>
         </div>
-      <div data-Aos ="fade-left" className= 'BorderShado md:w-[1792px] flex flex-col gap-y-10 '>
-        <div className='flex flex-col gap-3 bg-[#8ecaf2] rounded-t-[20px] justify-center items-center  text-center after:opacity-[46.7%]'>
+      <div data-Aos ="fade-left" className= 'BorderShado bg-themeCardBg text-themeText md:w-[1792px] flex flex-col gap-y-10 transition-colors duration-300'>
+        <div className='flex flex-col gap-3 bg-themeCardHeader rounded-t-[20px] justify-center items-center  text-center after:opacity-[46.7%] transition-colors duration-300'>
           <div className='mt-6 flex flex-col gap-y-6 '>
-          <h2 className='md:text-[1.6rem] text-[1.1rem] font-bold md:font-semibold text-[#001c55]'>Oriental Institute of Science and Technology Bhopal</h2>
-        <h3 className='md:text-[1.2rem] font-semibold text-[#001c55]'>Master of Computer Applications</h3>
-        <p className='text-[1.6rem] font-semibold text-[#001c55]'>2023 - 2025</p>
+          <h2 className='md:text-[1.6rem] text-[1.1rem] font-bold md:font-semibold text-themePrimary transition-colors duration-300'>Oriental Institute of Science and Technology Bhopal</h2>
+        <h3 className='md:text-[1.2rem] font-semibold text-themePrimary transition-colors duration-300'>Master of Computer Applications</h3>
+        <p className='text-[1.6rem] font-semibold text-themePrimary transition-colors duration-300'>2023 - 2025</p>
           </div>
        
         </div>
         <div className='flex flex-col gap-y-7 p-2'>
-      <p className='text-[#001c55] md:text-xl '>⚡ I am studying basic software engineering subjects like DS, Algorithms, DBMS, OS, AI etc.</p>
-      <p className='text-[#001c55] md:text-xl '>⚡ Apart from this, I have done courses C++ , HTML&CSS , Java , JavaScript , React.</p>
-      <p className='text-[#001c55] md:text-xl '>⚡On the Other hand ,  I also have a good knowledge of hardware and networking</p>
+      <p className='text-themeText md:text-xl transition-colors duration-300'>⚡ I am studying basic software engineering subjects like DS, Algorithms, DBMS, OS, AI etc.</p>
+      <p className='text-themeText md:text-xl transition-colors duration-300'>⚡ Apart from this, I have done courses C++ , HTML&CSS , Java , JavaScript , React.</p>
+      <p className='text-themeText md:text-xl transition-colors duration-300'>⚡On the Other hand ,  I also have a good knowledge of hardware and networking</p>
         </div>
         <div className='mb-3'>
-        <div className='bg-[#8ecaf2] h-[40px] w-[100px] mx-auto flex justify-center items-center rounded-md'>
-          <a href="https://oistbpl.com/">Visit Website</a>
+        <div className='bg-themeCardHeader hover:bg-themeNavHover hover:text-themePrimary h-[40px] w-[120px] mx-auto flex justify-center items-center rounded-md transition-all duration-200'>
+          <a href="https://oistbpl.com/" className="font-semibold text-themePrimary transition-colors duration-300">Visit Website</a>
         </div>
         </div>
       </div>
@@ -88,23 +88,23 @@ const Education = () => {
         <div data-Aos ="flip-left" className='md:my-auto drop-shado md:w-[400px] w-[15rem]'>
         <img src={Rcc} width="" height="" alt=""/>
         </div>
-      <div data-Aos ="fade-left" className= 'BorderShado md:w-[1792px] flex flex-col gap-y-10'>
-        <div className='flex flex-col gap-3 bg-[#8ecaf2] rounded-t-[20px] justify-center items-center  after:opacity-[46.7%]'>
+      <div data-Aos ="fade-left" className= 'BorderShado bg-themeCardBg text-themeText md:w-[1792px] flex flex-col gap-y-10 transition-colors duration-300'>
+        <div className='flex flex-col gap-3 bg-themeCardHeader rounded-t-[20px] justify-center items-center  after:opacity-[46.7%] transition-colors duration-300'>
           <div className='mt-6 flex flex-col gap-y-6 text-center'>
-          <h2 className='md:text-[1.6rem] text-[1.1rem] font-bold md:font-semibold text-[#001c55]'>Revnath Choure College RCC Nagpur</h2>
-        <h3 className='md:text-[1.2rem] font-semibold text-[#001c55]'>Bachelor of Computer Applications</h3>
-        <p className='text-[1.6rem] font-semibold text-[#001c55]'>2020 - 2023</p>
+          <h2 className='md:text-[1.6rem] text-[1.1rem] font-bold md:font-semibold text-themePrimary transition-colors duration-300'>Revnath Choure College RCC Nagpur</h2>
+        <h3 className='md:text-[1.2rem] font-semibold text-themePrimary transition-colors duration-300'>Bachelor of Computer Applications</h3>
+        <p className='text-[1.6rem] font-semibold text-themePrimary transition-colors duration-300'>2020 - 2023</p>
           </div>
 
         </div>
         <div className='flex flex-col gap-y-7 p-2'>
-      <p className='text-[#001c55] md:text-xl '>⚡ I have studied basic Computer subjects like MS Office , Linux, DS, DBMS, OS, C, C++ AI etc.</p>
-      <p className='text-[#001c55] md:text-xl '>⚡ Apart from this, I have done Some Computer Langauges C, C++ , HTML & CSS , Computer hardware.</p>
-      <p className='text-[#001c55] md:text-xl '>⚡On the Other hand ,  I also have a good knowledge of Windows Operating System</p>
+      <p className='text-themeText md:text-xl transition-colors duration-300'>⚡ I have studied basic Computer subjects like MS Office , Linux, DS, DBMS, OS, C, C++ AI etc.</p>
+      <p className='text-themeText md:text-xl transition-colors duration-300'>⚡ Apart from this, I have done Some Computer Langauges C, C++ , HTML & CSS , Computer hardware.</p>
+      <p className='text-themeText md:text-xl transition-colors duration-300'>⚡On the Other hand ,  I also have a good knowledge of Windows Operating System</p>
         </div>
         <div className='mb-3'>
-        <div className='bg-[#8ecaf2] h-[40px] w-[100px] mx-auto flex justify-center items-center rounded-md'>
-          <a href="https://www.rccsaoner.com/">Visit Website</a>
+        <div className='bg-themeCardHeader hover:bg-themeNavHover hover:text-themePrimary h-[40px] w-[120px] mx-auto flex justify-center items-center rounded-md transition-all duration-200'>
+          <a href="https://www.rccsaoner.com/" className="font-semibold text-themePrimary transition-colors duration-300">Visit Website</a>
         </div>
         </div>
       </div>
@@ -112,28 +112,28 @@ const Education = () => {
  </div>
  </div>
 
- {/* Certifcations */}
+  {/* Certifcations */}
 
 <div>
-<h1 data-Aos="fade-up" className='text-[2.4rem] m-[70px] flex justify-center text-[#001c55] font-bold'>Certifcations</h1>
+<h1 data-Aos="fade-up" className='text-[2.4rem] m-[70px] flex justify-center text-themePrimary font-bold transition-colors duration-300'>Certifcations</h1>
 <div data-Aos="fade-up" className=' flex gap-6 justify-center flex-wrap items-center'>
-<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
+<div data-Aos="fade-up"  className='border border-themePrimary rounded-lg md:h-[20rem] md:w-[30rem] transition-colors duration-300'>
 <img src={AiGenerative}  className=' w-full h-full object-fill' alt=""/>
 </div>
-<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
+<div data-Aos="fade-up"  className='border border-themePrimary rounded-lg md:h-[20rem] md:w-[30rem] transition-colors duration-300'>
 <img src={Hacker}  className=' w-full h-full object-fill' alt=""/>
 </div>
-<div data-Aos="fade-up"  className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
+<div data-Aos="fade-up"  className='border border-themePrimary rounded-lg md:h-[20rem] md:w-[30rem] transition-colors duration-300'>
 <img src={Webdesign}  className=' w-full h-full object-fill' alt=""/>
 </div>
-<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
-<img src={Reactjscer}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
+<div  data-Aos="fade-up" className='border border-themePrimary rounded-lg md:h-[20rem] md:w-[30rem] transition-colors duration-300'>
+<img src={Reactjscer}  className=' border-themeAccent border-[1.2rem] w-full h-full object-fill transition-colors duration-300' alt=""/>
 </div>
-<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
-<img src={Javascript}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
+<div  data-Aos="fade-up" className='border border-themePrimary rounded-lg md:h-[20rem] md:w-[30rem] transition-colors duration-300'>
+<img src={Javascript}  className=' border-themeAccent border-[1.2rem] w-full h-full object-fill transition-colors duration-300' alt=""/>
 </div>
-<div  data-Aos="fade-up" className='border border-[#001c55]  rounded-lg  md:h-[20rem] md:w-[30rem] '>
-<img src={DataStructure}  className=' border-[#0e182c]  border-[1.2rem] w-full h-full object-fill' alt=""/>
+<div  data-Aos="fade-up" className='border border-themePrimary rounded-lg md:h-[20rem] md:w-[30rem] transition-colors duration-300'>
+<img src={DataStructure}  className=' border-themeAccent border-[1.2rem] w-full h-full object-fill transition-colors duration-300' alt=""/>
 </div>
 
 
