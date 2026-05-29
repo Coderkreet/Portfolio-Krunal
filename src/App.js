@@ -17,6 +17,7 @@ import darkProfile from './Component/assets/image/DarkProfile.png';
 function App() {
   const { isDark } = useTheme();
   const [isChatOpen, setIsChatOpen] = useState(false);
+  const [hasUnread, setHasUnread] = useState(false);
   const [chatMessage, setChatMessage] = useState("");
   const [chatEmail, setChatEmail] = useState("");
   const [chatHistory, setChatHistory] = useState([
@@ -35,6 +36,14 @@ function App() {
       once: true
     });
   }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setHasUnread(true);
+    }, 4000);
+    return () => clearTimeout(timer);
+  }, []);
+
 
   useEffect(() => {
     if (chatEndRef.current) {
@@ -206,7 +215,8 @@ Strict Boundary: You must ONLY talk about my profile, career, background, projec
                   placeholder="Type a message..."
                   value={chatMessage}
                   onChange={(e) => setChatMessage(e.target.value)}
-                  className="flex-1 text-sm px-3 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                  className="flex-1 text-sm px-3 py-2 rounded-lg border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500"
+                  style={{ backgroundColor: '#ffffff', color: '#0f172a' }}
                 />
                 <button
                   type="submit"
@@ -223,7 +233,10 @@ Strict Boundary: You must ONLY talk about my profile, career, background, projec
 
         {/* Trigger Button */}
         <button
-          onClick={() => setIsChatOpen(!isChatOpen)}
+          onClick={() => {
+            setIsChatOpen(!isChatOpen);
+            setHasUnread(false);
+          }}
           className="flex items-center justify-center w-14 h-14 bg-gradient-to-r from-sky-500 to-indigo-600 hover:from-sky-600 hover:to-indigo-700 text-white rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 active:scale-95 focus:outline-none group relative border border-white/20"
         >
           {isChatOpen ? (
@@ -235,6 +248,14 @@ Strict Boundary: You must ONLY talk about my profile, career, background, projec
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
             </svg>
           )}
+
+          {/* Unread Message Notification Dot */}
+          {hasUnread && !isChatOpen && (
+            <span className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-[10px] font-bold text-white ring-2 ring-white dark:ring-slate-900 animate-bounce select-none">
+              1
+            </span>
+          )}
+          
           
           {/* Quick tooltip indicator */}
           {!isChatOpen && (
